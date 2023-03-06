@@ -98,7 +98,7 @@ function sum() {
         res.style.transition = 'all 0s'
         res.style.transform = 'translateX(-110%)'
         let num: any = parseInt(num1.value) + parseInt(num2.value)
-        let f:any = num<0 ? 0 : 1
+        let f: any = num < 0 ? 0 : 1
         num = num.toString(2)
         console.log(num)
         if (!f) num = num.slice(1)
@@ -107,7 +107,7 @@ function sum() {
           num = '0' + num
         }
         row1.value = num.split('')
-        row1.value.splice(0,1,f)
+        row1.value.splice(0, 1, f)
         setTimeout(() => {
           res.style.transition = '3s linear'
           res.style.transform = 'translateX(0)'
@@ -117,16 +117,16 @@ function sum() {
     }
     else {
       let num: any = parseInt(num1.value) + parseInt(num2.value)
-      let f:any = num<0 ? 0 : 1
-        num = num.toString(2)
-        console.log(num)
-        if (!f) num = num.slice(1)
-        console.log(num)
-        while (num.length < row2.value.length) {
-          num = '0' + num
-        }
-        row1.value = num.split('')
-        row1.value.splice(0,1,f)
+      let f: any = num < 0 ? 0 : 1
+      num = num.toString(2)
+      console.log(num)
+      if (!f) num = num.slice(1)
+      console.log(num)
+      while (num.length < row2.value.length) {
+        num = '0' + num
+      }
+      row1.value = num.split('')
+      row1.value.splice(0, 1, f)
       res.style.transform = 'translateX(0)'
     }
   }
@@ -140,10 +140,13 @@ function sum() {
 #app {
   background-color: var(--bg-main);
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
+  margin: 0;
+
 }
 
 .main {
@@ -157,12 +160,38 @@ function sum() {
 }
 
 @media (max-width: 750px) {
+  #app{
+    padding: 15px;
+  }
   .input-section {
     flex-direction: column;
+  }
+  .input-block{
+    width: 100% !important;
+  }
+  
+  .input-block:first-child{
+    margin-bottom: 15px;
   }
 
   .main {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .sum-section__button{
+    margin-right: 15px !important;
+    min-width: 50px !important;
+    min-height: 50px !important;
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .printer-block__result__img>img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -225,6 +254,7 @@ function sum() {
 .sum-section {
   display: flex;
   margin-top: 40px;
+  align-items: center;
 }
 
 .sum-section__button {
@@ -279,6 +309,7 @@ function sum() {
 }
 
 .printer-block__result__img__text__char {
+  text-align: center;
   display: block;
 }
 

@@ -7,6 +7,7 @@
   --input-bg: #C8D2C1;
   --text-color: #454842;
 }
+
 *{
   margin: 0;
   padding: 0;
@@ -15,4 +16,12 @@
   color: var(--text-color);
 }
 
-
+button:focus{
+  outline: none;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
