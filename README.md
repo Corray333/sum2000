@@ -1,46 +1,30 @@
-# sum2023
+#Sum2000
+Если вы ищете программу, которая быстро складывает два числа и переводит их в двоичную систему счисления, тогда программа "Sum2000" - это то, что вам нужно!
 
-This template should help get you started developing with Vue 3 in Vite.
+Суммирование чисел и перевод в двоичную систему счисления - это быстро и легко с нашей программой. Наш интерфейс простой и интуитивно понятный, что делает использование программы "Sum2000" доступным для любого пользователя.
 
-## Recommended IDE Setup
+Наша программа быстро обрабатывает большие (на самом деле не очень) числа, что значительно экономит время в сравнении с ручным суммированием и переводом в двоичную систему счисления.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Наконец, программа "Sum2000" доступна для использования в браузере совершенно бесплатно. Так что, не стесняйтесь, попробуйте нашу программу прямо сейчас и убедитесь сами, насколько она удобна и полезна для вас!
 
-## Type Support for `.vue` Imports in TS
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+------------
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+##Функционал
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+	Складывание десятичных чисел в диапазоне от -511 до 511
+	Перевод результата в двоичную форму
+	Валидация входных данных
 
-## Customize configuration
+------------
+##Используемые технологии
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+	HTML
+	CSS
+	Java Script
+	Vue.js
+	Figma
 
-## Project Setup
+------------
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+Проект подготовил Аникин Марк - студент ФКТиПМ КубГУ 1 курса, группа 16/2
